@@ -9,6 +9,8 @@
 	    <link rel="stylesheet" href="/media_files/style.css">
 
 
+@section('style')
+
         <style type="text/css">
             .seotop {height:auto;  text-align: center;}
             .seotop img {width:100%; max-width:2560px}
@@ -18,6 +20,7 @@
             .slide-button:hover { background-color: #ffffff;  color: #2a3547;}
 
         </style>
+		@show
     </head>
 
     <body>
@@ -80,9 +83,7 @@
         <div class="pur">
 		    <div class="row">
 		        <div class="col-xs-12">
-                	<div class="cen">
-		            <a class="slide-button" href="https://themeforest.net/item/the-repair-computer-mobile-and-electronics-repair-wordpress-theme/18200881?ref=secretlaboratory" targe="_blank"><i class="fa fa-shopping-cart"></i> Purchase now!</a>
-                    </div>
+@yield('content')
 		        </div>
 		    </div>
           </div>
